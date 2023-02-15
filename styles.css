@@ -1,0 +1,80 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 50px;
+  flex-wrap: wrap;
+  border-radius: 30px;
+}
+
+.calcu {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  height: 550px;
+  border-radius: 30px;
+  background-color: rgb(97, 164, 241);
+  justify-self: center;
+  align-self: center;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+#result {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 400px;
+  margin-top: 12px;
+  background-color: rgb(149, 198, 255);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+button:hover {
+  scale: 1.05;
+}
+
+button {
+  transition: 0.3s;
+}
+
+#compute, #operators, .numbers1, .numbers2, .numbers3 {
+  display: flex;
+  width: 350px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px;
+}
+
+#res {
+  align-self: center;
+  padding: 20px;
+  font-size: 40px;
+  max-width: 400px;
+  color: white;
+  font-style: 700;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.operators #plus, .operators #minus, .operators #times, .operators #divide{
+  margin-right: 8px;
+  margin-left: 8px;
+}
+#compute button, .operators button, .numbers1 button, .numbers2 button, .numbers3 button{
+  background-color: rgb(197, 224, 255);
+  padding: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: rgb(29, 105, 192);
+  border-radius: 10px;
+  box-shadow: none;
+  border: none;
+  font-size: 30px;
+}
